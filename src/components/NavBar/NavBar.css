@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+/*.navBar-Logo{
+    margin-bottom: 1em;
+    width: 40%;
+    margin-left: 0;
+}
+.navBar-link{
+    color: #c24848;
+    text-decoration: none;
+    font-size: xxx-large;
+    
+}*/
+
+/*
+.navBar-box{
+    background:
+     linear-gradient(
+       to left,
+       green 0, 
+       green 33.3%,
+       white 33.3%, 
+       white 66.6%, 
+       red 66.6%, 
+       red )no-repeat;
+   background-size:100% 5px;
+   background-position:bottom;
+}*/
+
+.navbar-appbar{
+    /*font-family: "Amatic SC"!important;*/
+    background-color: #ebe5bc!important;
+    background: linear-gradient(
+        to left,
+        green 0, 
+        green 33.3%,
+        white 33.3%, 
+        white 66.6%, 
+        red 66.6%, 
+        red )no-repeat;
+    background-size:100% 5px;
+    background-position:bottom;;
+}

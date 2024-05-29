@@ -1,0 +1,54 @@
+.poster-wrap{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+.poster-leftside-quote{
+    width: 50%;
+    font-size: 85px;
+    padding-top: 10%;
+}
+.poster-rightside-picture{
+    width: 50%;
+    align-items: center;
+}
+.poster-img{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1210px) {
+    .poster-leftside-quote{
+        font-size: 50px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .poster-wrap{
+        margin-top: 15%;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .poster-leftside-quote{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 0;
+    }
+    .poster-rightside-picture{
+        width: 100%;
+    }
+    .poster-img{
+        position: inherit;
+        width: 100%;
+        top: inherit;
+        -ms-transform: inherit;
+        transform: inherit;
+    }
+  }
