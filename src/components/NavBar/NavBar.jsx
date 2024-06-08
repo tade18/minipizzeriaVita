@@ -56,7 +56,7 @@ export default function NavBar() {
 
               <Box display={'flex'} flexDirection={'column'} py={3} width={'100%'}>
               <Link to={"/pizza"}><Button color="inherit">Pizza</Button></Link>
-              <Link to={"/pizza"}><Button color="inherit">Zmrzlina</Button></Link>
+              <Link to={"/pizza"}><Button color="inherit">Prodejna</Button></Link>
               <Link to={"/delivery"}><Button color="inherit">Rozvoz</Button></Link>
               </Box>
             
