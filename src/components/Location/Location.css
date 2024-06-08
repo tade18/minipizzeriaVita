@@ -1,47 +1,108 @@
+/*Location div jako celek*/
 .location-wrap{
     background-color: #c24848;
-    padding-bottom: 55px;
     display: flex;
     flex-direction: row;
+    transition: 1s ease;
+    height: 500px;
 }
+.location-wrap:hover{
+    background-color: #9b3232;
+}
+/*Levá část Location*/
 .location-leftIMG{
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 50%;
+    background-image: url("./src/img/minipizzeriaVita2.jpg");
+    background-position: center;
+}
+/*Pravá část Location*/
+.location-rightAdress{
     width: 50%;
 }
+/*jednoduchý text v pravé části*/
 .location-p{
     color: #ebe5bc;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
-.location-leftIMG img{
-    width: 90%;
-    padding: 5%;
-}
-.location-rightAdress{
-    width: 50%;
-    padding: 5%;
-}
+/*Nadpis v pravé části*/
 .location-h1{
     color: #ebe5bc;
-    font-size: 85px;
-    text-align: left;
+    font-size: 80px;
 }
+/*Text v pravé části*/
+.location-rightAdress-text{
+    margin: 0;
+    position: relative;
+    height: 60%;
+    font-size: 90px;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*Tlačítko*/
+.location-button {
+    align-self: center;
+    background-color: #ebe5bc !important;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Amatic SC", sans-serif !important;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .location-button:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .location-button:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+  
+/*Responzivita pro mobilní zařízení*/
 @media screen and (max-width: 600px){
     .location-wrap{
         flex-direction: column-reverse;
     }
     .location-leftIMG{
         width: 100%;
-    }
-    .location-leftIMG img{
-        width: 90%;
-        padding: 5%;
+        background-size: cover;
+        height: 50%;
     }
     .location-rightAdress{
         width: 100%;
-        padding: 0;
+        height: 50%;
     }
     .location-h1{
-        padding: 0.5em;
+        padding: 0em;
         font-size: 55px;
         text-align: center;
     }
@@ -49,7 +110,12 @@
         color: #ebe5bc;
         font-family: sans-serif;
         text-align: center;
-        padding-top: 1em;
-        font-size: 20px;
+        font-size: 15px;
+    }
+    .location-rightAdress-text{
+        height: 100%;
+    }
+    .location-button{
+        margin-top: 0;
     }
 }

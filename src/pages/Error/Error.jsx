@@ -1,5 +1,6 @@
 import { Box, Container } from "@mui/material";
 import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
 
 
 export default function Error(){
@@ -11,7 +12,7 @@ export default function Error(){
                     <img src={'./src/img/error.png'} alt='errorMessage' width={"500vh"}></img>
                 </Box>
            </Container>
-
+            <Footer />
         </>
     )
 }

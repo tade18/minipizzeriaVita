@@ -10,11 +10,10 @@ import Paper from "@mui/material/Paper";
 export default function Footer() {
     return (
         <>
-       
-      <Paper sx={{marginTop: 'calc(10% + 60px)',
+      <Paper sx={{marginTop: '60px',
       width: '100%',
-      position: 'absolute',
-      width: '100%'
+      bottom: "0",
+      position: 'relative',
       }} component="footer" square variant="outlined">
         <Container maxWidth="lg">
           <Box

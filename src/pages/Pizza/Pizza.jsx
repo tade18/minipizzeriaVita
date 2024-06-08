@@ -3,10 +3,13 @@ import NavBar from "../../components/NavBar/NavBar";
 import Pizza_cards from "../../components/Pizza_cards/Pizza_cards";
 import "./Pizza.css";
 import Grid from '@mui/material/Grid';
+import Footer from "../../components/Footer/Footer";
+import PageHeading from "../../components/PageHeading/PageHeading";
 export default function Pizza() {
   return (
     <>
       <NavBar />
+      <PageHeading pageH1="Pizza - Nabídka"/>
 {/* 
        <Pizza_cards name="quattro formaggi" popis="super" price="230Kc"/>
        <Pizza_cards name="dřevorubecká" popis="super" price="240Kc"/>
@@ -28,6 +31,10 @@ export default function Pizza() {
         </Grid>
       </Grid>
 
+
+
+
+      <Footer />
     </>
   );
 }

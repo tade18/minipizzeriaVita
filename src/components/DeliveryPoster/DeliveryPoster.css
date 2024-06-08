@@ -1,0 +1,52 @@
+.deliveryPoster-wrap{
+    display: flex;
+    background-color: rgb(115, 173, 115);
+    flex-direction: row;
+    height: 400px;
+    transition: 1s ease;
+}
+.deliveryPoster-wrap:hover{
+    background-color: rgb(97, 153, 97);
+}
+.deliveryPoster-left{
+    width: 50%;
+}
+.deliveryPoster-right{
+    width: 50%;
+    background-image: url('./src/img/deliveryguy.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.deliveryPoster-text{
+    margin: 0;
+    position: relative;
+    height: 60%;
+    font-size: 35px;
+    text-align: center;
+    top: 60%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.deliveryPoster-h1{
+    color: #ebe5bc;
+}
+
+@media screen and (max-width: 600px){
+    .deliveryPoster-wrap{
+        flex-direction: column;
+        height: 500px;
+    }
+    .deliveryPoster-left{
+        width: 100%;
+        height: 55%;
+    }
+    .deliveryPoster-right{
+        width: 100%;
+        height: 45%;
+        background-size: contain;
+    }
+    .deliveryPoster-text{
+        font-size: 20px;
+    }
+}
