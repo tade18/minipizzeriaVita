@@ -11,7 +11,7 @@
 }
 /*Levá část Location*/
 .location-leftIMG{
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: block;
     height: 100%;
@@ -38,8 +38,8 @@
 .location-rightAdress-text{
     margin: 0;
     position: relative;
-    height: 60%;
-    font-size: 90px;
+    height: 70%;
+    font-size: 70px;
     text-align: center;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -103,7 +103,7 @@
     }
     .location-h1{
         padding: 0em;
-        font-size: 55px;
+        font-size: 45px;
         text-align: center;
     }
     .location-p{
