@@ -1,3 +1,7 @@
+My first React project.
+Website for my local pizza restaurant.🍕
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
